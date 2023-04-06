@@ -1,0 +1,13 @@
+.top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #F0BB1F;
+    box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }

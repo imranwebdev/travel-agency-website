@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Volkhov:wght@700&display=swap");
+:root {
+    --red: #df6951;
+    --nevy: #181e4b;
+    --light-nevy: #5e6282;
+    --yellow: #f1a501;
+    --fontPopin:"Poppins", sans-serif;
+    --fontVolkov: "Volkhov", serif;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+    pointer-events: auto;
+  }
+main{
+overflow: hidden;
+}
+h1{
+    font-family: "Volkhov", serif;
+    color:var(--nevy);
+    font-family: var(--fontVolkov);
+    }
+h3{
+  font-family: "Poppins", sans-serif;
+  color: var(--light-nevy);
+  font-family: var(--fontPopin);
+}
+h5{
+color:var(--light-nevy);  
+}
+p{
+    font-weight: 400;
+    color: var(--light-nevy);
+    font-family: var(--fontPopin);
+}
+

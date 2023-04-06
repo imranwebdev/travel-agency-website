@@ -1,0 +1,122 @@
+.navTop {
+  padding-top: 20px;
+background-color: transparent !important;
+
+
+}
+
+.navTop .nav-item {
+  margin-right: 35px;
+
+
+
+}
+.navTop .nav-item .nav-link{
+  position: relative;
+  cursor: pointer;
+
+  
+}
+.navTop .nav-item .nav-link::before{
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0px;
+height: 2px;
+background-color:#DE7061;
+transition: 0.3s;
+}
+
+.navTop .nav-item .nav-link:hover::before{
+
+  width:100%;
+ 
+transition: 0.3s;
+  }
+
+.navTop .form-select:focus {
+  box-shadow: none;
+}
+
+.navTop .form-select {
+  border: none;
+  outline: none;
+  width: 80px;
+}
+
+.navTop .signup {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.hamburger {
+  position: absolute;
+  top: 26px;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+}
+
+.hamburger span {
+  display: block;
+  background-color: black;
+  height: 2px;
+  width: 100%;
+}
+
+.close-btn {
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.nav_menu {
+  z-index: 100;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .close-btn {
+    display: block;
+  }
+
+  .nav_menu {
+    display: none !important;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 0px;
+
+  }
+
+  .nav_menu.activenav {
+    background-color: white !important;
+    display: block !important;
+    margin-right: 0px !important;
+    padding: 60px 20px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    width: 200px;
+
+    transition: 0.3s ease-in-out;
+    /* Corrected transition property */
+  }
+
+  .navbar-expand .container {
+    display: block;
+  }
+}
